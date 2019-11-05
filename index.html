@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>
+			
+		</title>
+
+		<style>
+				
+		</style>
+
+		<script src="pyramid.js"></script>
+
+	</head>
+	<body>
+		
+		<div id="pyramid"></div>
+
+		<script>
+			const pyramid = new Pyramid(50);
+
+			function render () {
+				document.getElementById("pyramid").innerHTML = pyramid.setHtml().toString();					
+			}
+
+			document.onreadystatechange = function () {
+				if (this.readyState === "complete") {
+					render();
+				}
+			}
+
+		</script>
+
+	</body>
+</html>
