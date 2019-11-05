@@ -25,7 +25,7 @@ class Pyramid {
 					str_pyramid += " ";
 				}				
 			}
-			
+
 			str_pyramid += "\n";
 		}
 
@@ -38,7 +38,7 @@ class Pyramid {
 
 (() => {
 
-	const pyramid = new Pyramid(6);
+	const pyramid = new Pyramid(20);
 	console.log(pyramid.toString());
 
 })()
